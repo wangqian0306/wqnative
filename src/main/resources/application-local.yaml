@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: wqnative
+  datasource:
+    driver-class-name: ${JDBC_DRIVER:com.mysql.cj.jdbc.Driver}
+    url: ${MYSQL_URI:jdbc:mysql://localhost:3306/demo}
+    username: ${MYSQL_USERNAME:root}
+    password: ${MYSQL_PASSWORD:123456}
+  jpa:
+    open-in-view: false
+    show-sql: ${SHOW_SQL:false}
+    hibernate:
+      ddl-auto: ${DDL_AUTO:update}
+
+springdoc:
+  enable-native-support: true
